@@ -122,9 +122,16 @@ else if (mode == 'delete') {
 }
 
 fs.readdir(dir, (err, files) => {
+    if (err) {
+        console.warn('ERROR:', err);
+        process.exit(3);
+    }
     files.forEach(on_each_file);
+
+    if (0 == match_count) {
+        console.warn('nothing matched');
+    process.exit(1);
+    }
 });
 
-if (! match_count) {
-    console.warn('nothing matched');
-}
+
