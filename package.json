@@ -1,0 +1,14 @@
+{
+  "name": "batch-rename",
+  "version": "0.0.1",
+  "description": "batch rename files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@cocoamatic",
+  "license": "MIT",
+  "dependencies": {
+    "node-getopt": "^0.3.2"
+  }
+}
